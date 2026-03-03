@@ -1,0 +1,45 @@
+/* CSS for SimpleEditor */
+.simple-editor-wrapper .ProseMirror {
+    outline: none;
+    min-height: 280px;
+}
+
+.simple-editor-wrapper .ProseMirror a {
+    color: #428bca;
+    /* Standard link blue */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.simple-editor-wrapper .ProseMirror pre {
+    background: #2d2d2d;
+    color: #ccc;
+    font-family: 'JetBrainsMono', monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.simple-editor-wrapper .ProseMirror pre code {
+    color: inherit;
+    padding: 0;
+    background: none;
+    font-size: 0.9em;
+}
+
+.simple-editor-wrapper .ProseMirror p.is-editor-empty:first-child::before {
+    color: #adb5bd;
+    content: "Start writing...";
+    float: left;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Bootstrap validation support */
+.was-validated .simple-editor-wrapper:has(input:invalid) {
+    border-color: #dc3545 !important;
+}
+
+/* Fallback/Alternative if :has isn't supported or behaves oddly with hidden inputs */
+.was-validated input:invalid+.simple-editor-wrapper {
+    border-color: #dc3545 !important;
+}

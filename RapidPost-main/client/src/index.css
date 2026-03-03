@@ -1,0 +1,195 @@
+body {
+    font-family: "Outfit", sans-serif !important;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem !important;
+    transition: scale 0.3s ease-in-out;
+}
+
+.navbar-nav {
+    font-size: 1.1rem !important;
+}
+
+.rapidPost {
+    color: #9810fa !important;
+    font-size: 1.8rem;
+}
+
+.navbar-brand:hover {
+    color: #8200db !important;
+    scale: 1.1;
+
+}
+
+.btn {
+    background-color: #9810fa !important;
+    color: white !important;
+}
+
+.btn:hover {
+    background-color: #8200db !important;
+
+}
+
+.AI {
+    border: 1px solid #9810fa !important;
+    background-color: #f3e8ff;
+    transition: scale 0.5s ease-in-out;
+    font-size: 1.1rem !important;
+}
+
+.AI:hover {
+    scale: 1.05;
+    box-shadow: 2px 2px 2px #d6b9ea !important;
+}
+
+.tagline {
+    font-size: 4.6rem !important;
+}
+
+@media (max-width: 994px) {
+    .tagline {
+        font-size: 3.1rem !important;
+    }
+}
+
+@media (max-width: 488px) {
+    .tagline {
+        font-size: 2rem !important;
+    }
+
+    .AI {
+        font-size: 0.9rem !important;
+    }
+}
+
+.Blogging {
+    color: #8200db !important;
+    text-shadow: 1px 1px 2px #d6b9ea;
+}
+
+/* card */
+.blog-card {
+
+    border-radius: 1rem !important;
+    margin-bottom: 2rem !important;
+    padding: 0 !important;
+    transition: scale 0.4s ease-in-out;
+}
+
+.blog-card:hover {
+    scale: 1.02;
+    box-shadow: 2px 2px 4px #9810fa !important;
+}
+
+.card-img-top {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+    width: 100% !important;
+
+}
+
+.idx-body {
+    padding-bottom: 0 !important;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.btnn-decore {
+
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.edit:hover {
+    color: rgb(70, 79, 253);
+}
+
+.delete:hover {
+    color: red !important;
+}
+
+.blog-item:hover {
+    box-shadow: 2px 2px 6px gray !important;
+}
+
+.profile-card:hover {
+    box-shadow: 2px 10px 37px #d6b9ea !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.socialIcon:hover {
+    scale: 1.2;
+    color: black !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.li:hover {
+    text-decoration: underline !important;
+}
+
+.analytics:hover {
+    box-shadow: 7px 10px 30px gray !important;
+    scale: 1.01 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+@media (max-width:468px) {
+    .read {
+        display: none !important;
+    }
+}
+
+.active-category {
+    background-color: #8200db !important;
+    color: white !important;
+    border-radius: 20px;
+    padding: 4px 12px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.bttn {
+    border: solid 1px #d6b9ea;
+    background-color: #f3e8ff;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+.bttn:hover {
+    background-color: #d6b9ea;
+}
+
