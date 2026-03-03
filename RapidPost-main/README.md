@@ -2,9 +2,6 @@
 
 **AI-Powered Blogging Platform with Real-Time Notifications**
 
-**🌐 Live Website:** [RapidPost](https://www.rapidpost.live/)
-
-
 
 ## 📝 Overview
 
@@ -47,7 +44,7 @@ RapidPost is a modern, full-stack blogging platform powered by AI. It features a
 ## 📂 Project Structure
 
 ```bash
-RapidPost/
+RapidPost-main/
 ├── 📁 client/              # React Frontend
 │   ├── 📁 src/
 │   │   ├── 📁 components/  # Reusable UI components
@@ -64,51 +61,6 @@ RapidPost/
 │   └── server.js           # Entry point
 └── README.md
 ```
-
-## 🚦 Getting Started
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Nimishkumar07/RapidPost.git
-cd RapidPost
-```
-
-### 2. Setup Backend (`/server`)
-```bash
-cd server
-npm install
-```
-Create a `.env` file in `server/` with the following:
-```env
-ATLASDB_URL=your_mongodb_uri
-CLOUD_NAME=your_cloudinary_name
-CLOUD_API_KEY=your_key
-CLOUD_API_SECRET=your_secret
-SECRET=your_session_secret
-GEMINI_API_KEY=your_gemini_key
-VAPID_PUBLIC_KEY=your_vapid_public
-VAPID_PRIVATE_KEY=your_vapid_private
-```
-Start the backend:
-```bash
-npm start
-# Runs on localhost:8080
-```
-
-### 3. Setup Frontend (`/client`)
-Open a new terminal:
-```bash
-cd client
-npm install
-npm run dev
-# Runs on localhost:5173
-```
-
-## 🌐 Deployment
-
-- Frontend Deployed on [Vercel](https://vercel.com/)
-- Backend Deployed on AWS EC2
-- Database hosted with MongoDB Atlas
 
 ## 📖 Usage
 
@@ -131,10 +83,6 @@ npm run dev
 | `POST` | `/signup` | Register a new user |
 | `POST` | `/login` | Authenticate user |
 | `GET` | `/notifications` | Get user notifications |
-
-## 💬 Support
-
-Developed by [Nimish Kumar](https://www.linkedin.com/in/nimishkumar07/) with ❤️.
 
 ---
 
